@@ -89,11 +89,14 @@ export function UseCasesSection() {
                 {/* Image - 6 columns */}
                 <div className={`lg:col-span-6 ${!isEven ? 'lg:order-2' : ''}`}>
                   <div className="relative">
-                    <div className="relative rounded-2xl overflow-hidden shadow-2xl">
+                    <div 
+                      className="relative rounded-2xl overflow-hidden shadow-2xl bg-gradient-to-br from-sage-100 to-stone-100"
+                      style={{ aspectRatio: '4 / 3' }}
+                    >
                       <img 
                         src={useCase.image}
                         alt={useCase.title}
-                        className="w-full h-auto"
+                        className="absolute inset-0 w-full h-full object-cover"
                       />
                       <div className="absolute inset-0 bg-gradient-to-t from-stone-900/40 to-transparent"></div>
                     </div>

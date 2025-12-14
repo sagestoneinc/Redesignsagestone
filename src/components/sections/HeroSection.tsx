@@ -62,11 +62,14 @@ export function HeroSection() {
             {/* Right Image - 6 columns */}
             <div className="lg:col-span-6">
               <div className="relative">
-                <div className="relative rounded-2xl overflow-hidden shadow-2xl">
+                <div 
+                  className="relative rounded-2xl overflow-hidden shadow-2xl bg-gradient-to-br from-sage-100 to-stone-100"
+                  style={{ aspectRatio: '4 / 3' }}
+                >
                   <img 
                     src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxkYXRhJTIwYW5hbHl0aWNzJTIwZGFzaGJvYXJkfGVufDF8fHx8MTc2NTY5MDczMnww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
                     alt="SageStone Lab Analytics Dashboard"
-                    className="w-full h-auto"
+                    className="absolute inset-0 w-full h-full object-cover"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-sage-900/20 to-transparent"></div>
                 </div>
