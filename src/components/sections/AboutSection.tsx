@@ -57,11 +57,14 @@ export function AboutSection() {
             </p>
           </div>
           <div className="lg:col-span-6">
-            <div className="relative rounded-2xl overflow-hidden shadow-2xl">
+            <div 
+              className="relative rounded-2xl overflow-hidden shadow-2xl bg-gradient-to-br from-sage-100 to-stone-100"
+              style={{ aspectRatio: '4 / 3' }}
+            >
               <img 
                 src="https://images.unsplash.com/photo-1758873268663-5a362616b5a7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtb2Rlcm4lMjB0ZWFtJTIwY29sbGFib3JhdGlvbnxlbnwxfHx8fDE3NjU3MjUzNjd8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
                 alt="SageStone Team"
-                className="w-full h-auto"
+                className="absolute inset-0 w-full h-full object-cover"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-sage-900/30 to-transparent"></div>
             </div>
