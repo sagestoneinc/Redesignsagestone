@@ -22,7 +22,7 @@
   1. Go to your repository Settings > Pages
   2. Under "Build and deployment", select "GitHub Actions" as the source
   3. Push to the `main` branch to trigger automatic deployment
-  4. The site will be available at `https://sagestoneinc.github.io/Redesignsagestone/`
+  4. The site will be available at `https://sagestoneinc.github.io/sagestonelab/`
 
   ### Manual Deployment:
 

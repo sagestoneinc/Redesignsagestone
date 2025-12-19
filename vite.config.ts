@@ -4,7 +4,8 @@
   import path from 'path';
 
   export default defineConfig({
-    base: '/Redesignsagestone/',
+    // GitHub Pages expects the project name as the base path
+    base: '/sagestonelab/',
     plugins: [react()],
     resolve: {
       extensions: ['.js', '.jsx', '.ts', '.tsx', '.json'],
