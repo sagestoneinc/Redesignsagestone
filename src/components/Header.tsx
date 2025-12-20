@@ -11,10 +11,10 @@ export function Header({ currentPage = 'home' }: HeaderProps) {
 
   const navItems = [
     { name: 'Product', href: '#product' },
+    { name: 'Features', href: '#features' },
+    { name: 'Pricing', href: '#contact' },
     { name: 'Integrations', href: '#integrations' },
-    { name: 'Use Cases', href: '#use-cases' },
-    { name: 'About', href: '#about' },
-    { name: 'Contact', href: '#contact' },
+    { name: 'Resources', href: '#about' },
   ];
 
   return (
@@ -44,21 +44,27 @@ export function Header({ currentPage = 'home' }: HeaderProps) {
                   {item.name}
                 </a>
               ))}
+              <a
+                href="#contact"
+                className="text-stone-600 hover:text-sage-600 transition-colors"
+              >
+                Sign In
+              </a>
             </div>
 
             {/* Desktop CTA */}
             <div className="hidden md:flex items-center gap-4">
               <a
                 href="#contact"
-                className="text-sage-600 hover:text-sage-700 transition-colors"
+                className="px-4 py-2.5 text-sage-700 border border-sage-200 rounded-lg hover:border-sage-400 hover:shadow-sm transition-all"
               >
-                Request Demo
+                See How It Works
               </a>
               <a
                 href="#contact"
                 className="px-6 py-2.5 bg-gradient-to-r from-[var(--sage-600)] to-[var(--sage-700)] text-white rounded-lg hover:shadow-lg transition-shadow"
               >
-                Get Started
+                Start Free Trial
               </a>
             </div>
 
@@ -85,20 +91,27 @@ export function Header({ currentPage = 'home' }: HeaderProps) {
                     {item.name}
                   </a>
                 ))}
+                <a
+                  href="#contact"
+                  onClick={() => setMobileMenuOpen(false)}
+                  className="text-stone-600 hover:text-sage-600 transition-colors"
+                >
+                  Sign In
+                </a>
                 <div className="flex flex-col gap-2 mt-2">
                   <a
                     href="#contact"
                     onClick={() => setMobileMenuOpen(false)}
                     className="px-6 py-2.5 text-center border border-sage-600 text-sage-600 rounded-lg hover:bg-sage-50 transition-colors"
                   >
-                    Request Demo
+                    See How It Works
                   </a>
                   <a
                     href="#contact"
                     onClick={() => setMobileMenuOpen(false)}
                     className="px-6 py-2.5 text-center bg-gradient-to-r from-[var(--sage-600)] to-[var(--sage-700)] text-white rounded-lg hover:shadow-lg transition-shadow"
                   >
-                    Get Started
+                    Start Free Trial
                   </a>
                 </div>
               </div>

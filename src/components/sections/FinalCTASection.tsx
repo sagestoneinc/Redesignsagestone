@@ -27,15 +27,15 @@ export function FinalCTASection() {
           <div className="relative z-10 px-8 md:px-16 py-16 md:py-20 text-center">
             <div className="inline-flex items-center gap-2 px-4 py-2 bg-white/20 backdrop-blur-sm rounded-full mb-8">
               <Sparkles className="text-sage-200" size={18} />
-              <span className="text-sm text-sage-50">Start Your Free Trial Today</span>
+              <span className="text-sm text-sage-50">Start your free 14-day trial</span>
             </div>
 
             <h2 className="text-white mb-6 max-w-3xl mx-auto">
-              Turn Marketing Data Into Measurable Growth
+              Turn every email into measurable revenue
             </h2>
 
             <p className="text-xl text-sage-100 max-w-2xl mx-auto mb-12">
-              Join hundreds of teams using SageStone Lab to automate workflows, analyze performance, and make data-driven marketing decisions.
+              Join teams that use SageStone Lab to automate workflows, guard deliverability, and see revenue impact without guesswork.
             </p>
 
             {/* CTAs */}
@@ -44,14 +44,14 @@ export function FinalCTASection() {
                 href="#contact"
                 className="inline-flex items-center gap-2 px-8 py-4 bg-white text-sage-700 rounded-lg hover:shadow-2xl transition-all font-medium group"
               >
-                Get Started Today
+                Start Free Trial – No Card
                 <ArrowRight className="group-hover:translate-x-1 transition-transform" size={18} />
               </a>
               <a
                 href="#contact"
                 className="inline-flex items-center gap-2 px-8 py-4 border-2 border-white text-white rounded-lg hover:bg-white/10 transition-all font-medium"
               >
-                Schedule a Demo
+                See How It Works
               </a>
             </div>
 

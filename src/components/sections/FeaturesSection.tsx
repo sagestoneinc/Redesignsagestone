@@ -1,58 +1,52 @@
 import React from 'react';
 import { Container } from '../Container';
 import { Card } from '../Card';
-import { Brain, BarChart3, Zap, Server, Shield, Rocket } from 'lucide-react';
+import { Brain, BarChart3, Zap, Workflow, ShieldCheck, BarChart4 } from 'lucide-react';
 
 export function FeaturesSection() {
   const features = [
     {
       icon: Brain,
-      title: 'Smart Marketing Automation',
-      description: 'Automate complex workflows with AI-driven decision-making that learns from your campaign performance and audience behavior.',
-      highlights: ['Intelligent campaign triggers', 'Dynamic audience segmentation', 'Auto-optimization']
+      title: 'AI Segmentation that Personalizes at Scale',
+      description: 'Behavioral, revenue, and intent signals automatically build audiences that refresh in real time.',
+      highlights: ['Predictive segments and lookalikes', 'Auto-refreshing cohorts', 'One-click exclusions for fatigue']
     },
     {
-      icon: BarChart3,
-      title: 'Advanced Analytics & Insights',
-      description: 'Transform marketing data into clear, actionable insights with custom dashboards, predictive analytics, and real-time reporting.',
-      highlights: ['Custom reporting dashboards', 'Predictive performance modeling', 'Cross-channel attribution']
+      icon: Workflow,
+      title: 'Automation Workflows That Ship Themselves',
+      description: 'Trigger journeys from product, billing, and engagement events with guardrails that protect deliverability.',
+      highlights: ['Visual journey builder', 'Send-time & channel optimization', 'Rollback and failsafe rules']
+    },
+    {
+      icon: ShieldCheck,
+      title: 'Deliverability Insights & Guardrails',
+      description: 'Proactive alerts on list health, domain reputation, and inbox placement keep revenue emails out of spam.',
+      highlights: ['List quality scoring', 'Domain warm-up assistant', 'Automated suppression policies']
+    },
+    {
+      icon: BarChart4,
+      title: 'Revenue Analytics You Can Act On',
+      description: 'Trace every campaign to pipeline and revenue with clear attribution across DTC and SaaS motions.',
+      highlights: ['Revenue & LTV dashboards', 'A/B and multivariate stats', 'Channel and SKU attribution']
     },
     {
       icon: Zap,
-      title: 'Seamless Integrations',
-      description: 'Native integrations with Mailchimp, Moosend, and Klaviyo ensure your data flows seamlessly across your marketing stack.',
-      highlights: ['One-click setup', 'Real-time data sync', 'Bi-directional workflows']
-    },
-    {
-      icon: Server,
-      title: 'Scalable Infrastructure',
-      description: 'Built on enterprise-grade cloud infrastructure that grows with your business, handling millions of data points effortlessly.',
-      highlights: ['99.9% uptime SLA', 'Auto-scaling capacity', 'Global CDN delivery']
-    },
-    {
-      icon: Shield,
-      title: 'Security & Reliability',
-      description: 'Enterprise-level security with SOC 2 compliance, end-to-end encryption, and regular security audits to protect your data.',
-      highlights: ['SOC 2 Type II certified', 'GDPR compliant', 'Role-based access control']
-    },
-    {
-      icon: Rocket,
-      title: 'Continuous Innovation',
-      description: 'Regular platform updates with new features, integrations, and AI capabilities based on customer feedback and market trends.',
-      highlights: ['Monthly feature releases', 'Dedicated support', 'Product roadmap access']
+      title: 'Faster Setup, Fewer Tickets',
+      description: 'Prebuilt recipes for welcome, lifecycle, win-back, and product updates ship in minutes with no engineering time.',
+      highlights: ['Template library for DTC & SaaS', 'Role-based approvals', 'Sandbox to production in one click']
     }
   ];
 
   return (
-    <section className="section-spacing bg-white">
+    <section id="features" className="section-spacing bg-white">
       <Container>
         {/* Header */}
         <div className="text-center max-w-3xl mx-auto" style={{ marginBottom: 'var(--subsection-spacing)' }}>
           <h2>
-            Core Features of SageStone Lab
+            Built to Drive Revenue, Not Just Sends
           </h2>
           <p className="text-xl text-stone-600 max-w-none">
-            Everything you need to transform marketing data into measurable growth, backed by AI and built for scale.
+            AI segmentation, intelligent automations, deliverability guardrails, and revenue analytics in one modern email platform.
           </p>
         </div>
 
